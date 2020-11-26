@@ -93,7 +93,7 @@ h6 {
   font-style: italic;
 }
 
-.testimonial-author {
+#team .name {
   font: 600 1rem/1.5rem "Poppins", sans-serif;
 }
 
@@ -1060,25 +1060,34 @@ input[type="checkbox"] {
 }
 
 /************************/
-/*     Testimonials     */
+/*     Team     */
 /************************/
-.cards-3 {
+#team {
   padding-top: 3rem;
   padding-bottom: 1.375rem;
   text-align: center;
 }
 
-.cards-3 .card {
+#team h2 {
+  margin-bottom: 5rem;
+}
+#team .card-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#team .card {
   margin-bottom: 4rem;
   border: none;
   background-color: transparent;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.cards-3 .card-image {
+#team img {
   margin-bottom: 1.625rem;
-}
-
-.cards-3 .card-image img {
   width: 5.625rem;
   border-radius: 50%;
 }
@@ -1091,7 +1100,7 @@ input[type="checkbox"] {
   margin-bottom: 0.75rem;
 }
 
-.cards-3 .testimonial-author {
+#team .name {
   color: #39364e;
 }
 
@@ -1623,7 +1632,7 @@ a:hover.back-to-top {
   /* Testimonials */
   .cards-3 .card {
     display: inline-block;
-    width: 18rem;
+    width: 12rem;
     vertical-align: top;
   }
 
@@ -1790,12 +1799,7 @@ a:hover.back-to-top {
 
   /* Testimonials */
   .cards-3 .card {
-    width: 20rem;
-  }
-
-  .cards-3 .card:nth-of-type(3n + 2) {
-    margin-right: 4.375rem;
-    margin-left: 4.375rem;
+    width: 14rem;
   }
   /* end of testimonials */
 
